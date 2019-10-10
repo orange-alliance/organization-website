@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation {
+    background: #fff;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    transition: top 0.2s ease-in-out;
+}
+
+.main-content {
+    min-height: 60vh;
+    padding-top: 1.5rem;
+    margin-top: 57px;
+    transition: all 0.4s;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.section-title span {
+    border-bottom: 1px solid rgba(0, 0, 0, .44);
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: -1px;
+}
+
+.about-section ul {
+    list-style: none;
+    justify-content: center;
+    padding: 0!important;
+}
+
+.about-section li {
+    color: #586069;
+    display: flex;
+}
+
+.about-section img {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+.about-section a, .about-section a:hover {
+    color: #586069!important;
+}
+
+.links-section a {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.links-section a:last-child {
+    border-bottom: unset!important;
+}
+
+.no-underline, .no-underline:hover {
+    text-decoration: none !important;
+}
+
+.meetings-row {
+    position: relative;
+    display: flex;
+    overflow: auto;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.next-meeting {
+    background-color: #032f62!important;
+    color: #fff!important;
+}
+
+.next-meeting .meeting-type {
+    color: rgba(255,255,255,0.7) !important
+}
+
+.next-meeting .meeting-date {
+    color: rgba(255,255,255,0.9) !important
+}
+
+.next-meeting .documents a {
+    color: #fff!important;
+}
+
+.meeting {
+    position: relative;
+    display: block;
+    min-width: 250px;
+    height: initial;
+    margin-right: 16px;
+    padding: 1.5rem;
+    border-radius: 5px;
+    transition: .4s;
+    background-color: #f6f8fa;
+    color: #24292e;
+}
+
+.meeting-type {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #808891;
+}
+
+.meeting h3 {
+    margin: 0;
+}
+
+.meeting-date {
+    color: #363f43;
+    font-size: 15px;
+}
+
+.meeting .documents a, .meeting .documents a:hover {
+    display: block;
+    text-decoration: none !important;
+    color: #24292e;
+}
+
+
+.hover-link-arrow {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(0);
+    transition: 0.3s;
+}
+
+a:hover .hover-link-arrow {
+    opacity: 1;
+    transform: translateX(3px);
+    transition: transform 0.3s;
+}
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, .44);
+    margin-top: 50px;
+    position: relative;
+    background: #fff;
+}
