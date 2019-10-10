@@ -142,7 +142,7 @@ section {
     transition: 0.3s;
 }
 
-a:hover .hover-link-arrow {
+a[href]:hover .hover-link-arrow {
     opacity: 1;
     transform: translateX(3px);
     transition: transform 0.3s;
