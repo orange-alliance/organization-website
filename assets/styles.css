@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  transition: all 0.4s;
+}
+
+.landing {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.1rem;
+  letter-spacing: -0.02rem;
+  color: #888;
+}
+
+.features {
+  max-width: 768px;
+  margin: 0 auto 60px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.feature img {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.feature,
+.features a,
+.features a:hover {
+  color: #000 !important;
+}
+
+.main-content {
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+  background: #fafafa;
+}
+
+section {
+  padding: 36px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.meetings-row {
+  position: relative;
+  display: flex;
+  overflow: auto;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 20px;
+  margin: -20px;
+}
+
+.next-meeting {
+  background-color: #032f62 !important;
+  color: #fff !important;
+}
+
+.next-meeting .meeting-type {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.next-meeting .meeting-date {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.next-meeting .documents a {
+  color: #fff !important;
+}
+
+.meeting {
+  position: relative;
+  display: block;
+  min-width: 250px;
+  height: initial;
+  margin-right: 16px;
+  padding: 1.5rem;
+  border-radius: 5px;
+  transition: 0.4s;
+  color: #24292e;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 10px;
+  border-radius: 7px;
+}
+
+.meeting-type {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #808891;
+}
+
+.meeting h3 {
+  margin: 0;
+}
+
+.meeting-date {
+  color: #363f43;
+  font-size: 15px;
+}
+
+.meeting .documents a,
+.meeting .documents a:hover {
+  display: block;
+  text-decoration: none !important;
+  color: #24292e;
+}
+
+.hover-link-arrow {
+  position: absolute;
+  opacity: 0;
+  transform: translateX(0);
+  transition: 0.3s;
+}
+
+a[href]:hover .hover-link-arrow {
+  opacity: 1;
+  transform: translateX(3px);
+  transition: transform 0.3s;
+}
+
+.links-section a {
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.links-section a:last-child {
+  border-bottom: unset !important;
+}
+
+.footer {
+  border-top: 1px solid #eaeaea;
+  padding: 18px 0;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.56);
+  background: #fff;
+}
